@@ -49,12 +49,12 @@ Produces NIfTI/DICOM RTSTRUCT segmentations.
 ## Repository structure
 
 ```
-CT_SwallowingAndChewing_DeepLabV3/
-├── model/                  # Pre-trained model weights
-├── model_wrapper/          # Python inference wrapper
-├── recipe/                 # Container recipe (Singularity/Docker)
-├── environment.yml         # Conda environment specification
-└── demo_DLseg_swallowing_and_chewing_structures.ipynb  # Demo notebook
+AI_Seg_HeadNeckCT/
+├── model_wrapper/          		  # Python inference wrapper
+├── requirements/           		  # Python dependencies
+├── model.txt                             # Location of pre-trained model weights
+├── run_spec.yaml                         # Specifications for installing and running the model via pycerr
+└── autosegment_CT_HeadAndNeck_OARs.ipynb # Demo notebook
 ```
 
 ---
